@@ -1,0 +1,18 @@
+FROM rust:latest
+
+COPY ./docker/minimal/core /libra
+COPY ./interface /libra/interface
+
+WORKDIR /libra
+
+RUN apt-get update && apt-get install -y cmake
+RUN PROTOC_VERSION=3.8.0 && PROTOC_ZIP=protoc-$PROTOC_VERSION-linux-x86_64.zip && \
+    curl -OL https://github.com/google/protobuf/releases/download/v$PROTOC_VERSION/$PROTOC_ZIP && \
+    unzip -o $PROTOC_ZIP -d /usr/local bin/protoc && \
+    unzip -o $PROTOC_ZIP -d /usr/local include/* && \
+    rm -f $PROTOC_ZIP
+RUN rustup install nightly && rustup default nightly
+
+WORKDIR /libra/interface
+RUN cargo build -p interface
+
