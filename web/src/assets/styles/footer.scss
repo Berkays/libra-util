@@ -1,0 +1,21 @@
+$footer-color: white;
+
+footer {
+	background-color: $footer-color;
+
+	a {
+		border-bottom: 2px solid #453886;
+        padding-bottom: 0.25em;
+        color: #453886;
+        text-decoration: none;
+        
+		&:hover {
+            text-decoration: none;
+            color: #1f154e;
+		}
+	}
+}
+
+.fa-heart {
+	color: red;
+}

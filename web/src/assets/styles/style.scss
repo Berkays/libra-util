@@ -1,0 +1,51 @@
+@import "bootstrap/dist/css/bootstrap.css";
+@import "./footer.scss";
+@import "./colors.scss";
+@import "./fonts.scss";
+
+
+$footer-height: 5rem;
+$page-background-color: linear-gradient(
+	to right,
+	#42318c,
+	#504098,
+	#5f4fa4,
+	#6d5eaf,
+	#7b6ebb
+);
+
+* {
+	box-sizing: border-box;
+}
+*:before,
+*:after {
+	box-sizing: border-box;
+}
+html,
+body {
+	height: 100%;
+	position: relative;
+}
+
+#app {
+	min-height: 100vh; /* will cover the 100% of viewport */
+	overflow: hidden;
+	display: block;
+	position: relative;
+    padding-bottom: $footer-height; /* height of your footer */
+    
+    h3 {
+        font-weight: 400;
+    }
+}
+
+body {
+	background: $page-background-color;
+}
+
+footer {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: $footer-height;
+}

@@ -1,0 +1,30 @@
+{
+    "name": "libra-util",
+    "version": "0.0.1",
+    "description": "Libra Util web app",
+    "main": "app.js",
+    "scripts": {
+        "dev": "parcel ./public/index.pug",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "Berkay Gürsoy <berkagursoy@gmail.com>",
+    "license": "MIT",
+    "devDependencies": {
+        "@vue/component-compiler-utils": "^3.0.0",
+        "parcel-bundler": "^1.12.3",
+        "pug": "^2.0.4",
+        "sass": "^1.22.3",
+        "vue-template-compiler": "^2.6.10"
+    },
+    "dependencies": {
+        "bootstrap": "^4.3.1",
+        "hover.css": "^2.3.2",
+        "jquery": "^3.4.1",
+        "popper.js": "^1.15.0",
+        "vue": "^2.6.10",
+        "vue-hot-reload-api": "^2.3.3"
+    },
+    "alias": {
+        "vue": "./node_modules/vue/dist/vue.common.js"
+    }
+}
