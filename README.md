@@ -1,6 +1,6 @@
 # Libra Util
 
-Libra Utils is an interface to the Libra blockhain CLI commands to simplify certain parsing actions. This tool currently supports generating new accounts only and it is intended for testing purposes.
+Libra Utils is an interface to the Libra CLI commands to simplify certain parsing actions. This tool currently supports generating new accounts only and it is intended for testing purposes.
 
 ## Build
 
@@ -12,8 +12,12 @@ Libra Utils is an interface to the Libra blockhain CLI commands to simplify cert
     * Minimal image: `docker build -t libra-util -f docker\minimal\dockerfile .`
     * Full image: `docker build -t libra-util -f docker\full\dockerfile .`
 3. Execute interface:
-    * Create new account: `docker run --rm libra-util:latest ./target/debug/interface create`
+    * Create new account: 
+    `$ docker run --rm libra-util:latest ./target/debug/interface create`
+        
+        Sample Output:
 
+            $ 9620fb0dbfcdb22ec554b9405246973b106eab6d3c6946c35fd270246a4345c9:kite release view hurt release autumn north essay rocket swap enroll crash mechanic mystery guitar excuse crumble giggle toilet oval slab toe negative canoe
 ## Contribute
 
 Feel free to contribute or ask about anything.
