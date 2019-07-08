@@ -7,7 +7,7 @@ Libra Utils is an interface to the Libra CLI commands to simplify certain parsin
 * Minimal image contains only the needed packages for the interface. Libra CLI is not included.
 * Full image fetches the Official Libra repository and adds interface package. Libra CLI is included.
 
-1. Fork this repository: `git clone https://`
+1. Fork this repository: `git clone https://github.com/Berkays/libra-util.git`
 2. Run docker build in root directory (This might take few minutes):
     * Minimal image: `docker build -t libra-util -f docker\minimal\dockerfile .`
     * Full image: `docker build -t libra-util -f docker\full\dockerfile .`
